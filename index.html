@@ -1,0 +1,785 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Małgorzata Łapot — fizjoterapeuta dziecięcy · Grodzisk Mazowiecki</title>
+<meta name="description" content="Fizjoterapia dziecięca z pasją. Terapia wad postawy, skolioz, zaburzeń neurorozwojowych. Ćwiczenia dopasowane do dziecka — mgr fizjoterapii, WUM. FizjoFinezja · Grodzisk Mazowiecki.">
+<meta property="og:title" content="Małgorzata Łapot — fizjoterapeuta dziecięcy">
+<meta property="og:description" content="Ruch to język Twojego dziecka. Pomagam mu mówić płynniej.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --rose:#e879c5;
+  --rose-soft:#fce7f3;
+  --rose-deep:#be185d;
+  --teal:#0d9488;
+  --teal-soft:#ccfbf1;
+  --cream:#fef9f5;
+  --ink:#1a1a2e;
+  --mute:#64748b;
+  --line:#e2e8f0;
+}
+html{scroll-behavior:smooth}
+html,body{background:var(--cream);color:var(--ink);-webkit-font-smoothing:antialiased;font-family:'Inter',system-ui,-apple-system,sans-serif;font-weight:400;line-height:1.6}
+
+img{max-width:100%;display:block}
+a{color:inherit}
+
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+h1,h2,h3,h4{font-family:'Fraunces',Georgia,serif;letter-spacing:-.02em;color:var(--ink);font-weight:500}
+
+/* ========== HEADER ========== */
+.header{position:sticky;top:0;z-index:50;background:rgba(254,249,245,.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(232,121,197,.12)}
+.header .inner{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand img{width:48px;height:48px;object-fit:contain}
+.brand-text .name{font-family:'Fraunces',serif;font-size:20px;font-weight:700;letter-spacing:-.02em;line-height:1}
+.brand-text .tag{font-size:11px;color:var(--mute);letter-spacing:.1em;text-transform:uppercase;margin-top:2px;font-weight:500}
+nav ul{list-style:none;display:flex;gap:36px}
+nav a{text-decoration:none;font-size:14px;font-weight:500;color:var(--ink);transition:color .2s;position:relative}
+nav a:hover{color:var(--rose-deep)}
+.cta{display:inline-flex;align-items:center;gap:8px;padding:11px 22px;background:var(--ink);color:var(--cream);text-decoration:none;border-radius:100px;font-weight:600;font-size:14px;transition:transform .2s}
+.cta:hover{transform:translateY(-2px);background:var(--rose-deep)}
+@media(max-width:900px){nav{display:none}}
+
+/* ========== HERO ========== */
+.hero{position:relative;padding:72px 0 96px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr 1fr;gap:72px;align-items:center}
+.hero-bg{position:absolute;top:0;right:0;width:55%;height:100%;background:linear-gradient(135deg,var(--rose-soft) 0%,var(--teal-soft) 100%);border-radius:0 0 0 240px;z-index:0;opacity:.6}
+.hero-left{position:relative;z-index:5}
+.hero-badge{display:inline-flex;align-items:center;gap:10px;padding:8px 16px;background:#fff;border:1px solid var(--rose-soft);border-radius:100px;font-size:13px;color:var(--rose-deep);font-weight:600;margin-bottom:28px;box-shadow:0 4px 16px rgba(232,121,197,.1)}
+.hero-badge::before{content:"";width:8px;height:8px;background:var(--teal);border-radius:50%}
+.hero h1{font-size:clamp(40px,5.5vw,72px);font-weight:500;line-height:1.02;font-style:italic}
+.hero h1 b{font-weight:900;font-style:normal}
+.hero h1 .rose{color:var(--rose-deep);font-style:normal;font-weight:900}
+.hero .sub{margin-top:28px;font-size:19px;color:var(--mute);max-width:500px;line-height:1.6}
+.hero .cta-row{margin-top:36px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;padding:16px 32px;background:var(--ink);color:var(--cream);text-decoration:none;border-radius:100px;font-weight:600;font-size:15px;transition:all .2s}
+.btn-primary:hover{background:var(--rose-deep);transform:translateY(-2px);box-shadow:0 12px 30px rgba(190,24,93,.3)}
+.btn-ghost{display:inline-flex;align-items:center;gap:8px;padding:14px 28px;color:var(--ink);text-decoration:none;font-weight:600;font-size:15px;border-bottom:2px solid var(--rose)}
+
+.hero-right{position:relative;z-index:5}
+.hero-photo{position:relative;border-radius:24px;overflow:hidden;box-shadow:0 30px 60px rgba(26,26,46,.15),0 12px 24px rgba(26,26,46,.08);aspect-ratio:1/1.2}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.hero-decor{position:absolute;top:-24px;left:-24px;width:140px;height:140px;background:var(--rose);border-radius:50%;z-index:-1;opacity:.2}
+.hero-decor-2{position:absolute;bottom:-16px;right:-24px;width:80px;height:80px;background:var(--teal);border-radius:50%;z-index:-1;opacity:.15}
+
+.hero-stats-card{position:absolute;bottom:24px;left:-24px;background:#fff;padding:16px 20px;border-radius:16px;box-shadow:0 12px 30px rgba(0,0,0,.12);display:flex;align-items:center;gap:14px;max-width:260px}
+.hero-stats-card .ico{width:42px;height:42px;border-radius:50%;background:var(--rose-soft);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:20px}
+.hero-stats-card .t{font-family:'Fraunces',serif;font-size:16px;font-weight:700;line-height:1.1}
+.hero-stats-card .s{font-size:12px;color:var(--mute);margin-top:2px}
+
+@media(max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;gap:48px}
+  .hero-bg{width:100%;border-radius:0}
+}
+
+/* Trust strip */
+.trust{padding:32px 0;background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.trust .wrap{display:flex;flex-wrap:wrap;gap:48px;justify-content:space-around;align-items:center;text-align:center}
+.trust .item{display:flex;flex-direction:column;gap:4px}
+.trust .v{font-family:'Fraunces',serif;font-size:32px;font-weight:900;color:var(--rose-deep);line-height:1}
+.trust .l{font-size:12px;color:var(--mute);letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+
+/* Section base */
+section{padding:96px 0}
+.section-kicker{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;background:var(--teal-soft);color:var(--teal);border-radius:100px;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:20px}
+.section-kicker::before{content:"✦"}
+.section-kicker.rose{background:var(--rose-soft);color:var(--rose-deep)}
+h2.section-title{font-size:clamp(32px,4vw,52px);line-height:1.05;font-weight:500;font-style:italic;margin-bottom:20px}
+h2.section-title b{font-weight:900;font-style:normal}
+h2.section-title .rose{color:var(--rose-deep);font-style:normal;font-weight:900}
+.section-intro{font-size:18px;color:var(--mute);max-width:720px;line-height:1.65}
+
+/* ========== ABOUT ========== */
+.about{background:#fff;position:relative}
+.about .wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:72px;align-items:center}
+.about-photos{position:relative;aspect-ratio:1/1.2}
+.about-photos .p-main{position:absolute;inset:0;border-radius:24px;overflow:hidden;box-shadow:0 24px 50px rgba(26,26,46,.12)}
+.about-photos .p-main img{width:100%;height:100%;object-fit:cover}
+.about-photos .p-accent{position:absolute;top:24px;right:-32px;width:46%;height:42%;border-radius:16px;overflow:hidden;box-shadow:0 20px 40px rgba(0,0,0,.18);border:6px solid #fff}
+.about-photos .p-accent img{width:100%;height:100%;object-fit:cover}
+
+.about-body p{margin-bottom:16px;font-size:16px;color:#334155;line-height:1.75}
+.about-body .highlight{color:var(--rose-deep);font-weight:600}
+.about-card-row{margin-top:32px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.about-card{padding:20px;background:var(--cream);border:1px solid var(--line);border-radius:16px}
+.about-card .ico{width:36px;height:36px;border-radius:10px;background:var(--rose-soft);display:flex;align-items:center;justify-content:center;font-size:18px;margin-bottom:10px}
+.about-card .t{font-family:'Fraunces',serif;font-weight:700;font-size:15px;line-height:1.2;margin-bottom:4px}
+.about-card .s{font-size:13px;color:var(--mute);line-height:1.4}
+
+@media(max-width:900px){.about .wrap{grid-template-columns:1fr}.about-photos .p-accent{right:-12px}}
+
+/* ========== JAK PRACUJĘ ========== */
+.flow{background:linear-gradient(180deg,var(--cream) 0%,#fff 100%)}
+.flow-grid{margin-top:56px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.flow-step{position:relative;padding:28px;background:#fff;border:1px solid var(--line);border-radius:20px;transition:all .3s}
+.flow-step:hover{border-color:var(--rose);transform:translateY(-4px);box-shadow:0 20px 40px rgba(232,121,197,.15)}
+.flow-step .num{position:absolute;top:-16px;left:24px;width:48px;height:48px;background:linear-gradient(135deg,var(--rose),var(--rose-deep));color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:900;font-size:20px;box-shadow:0 8px 20px rgba(232,121,197,.4)}
+.flow-step h3{margin-top:16px;font-size:20px;font-weight:700;line-height:1.2}
+.flow-step p{margin-top:10px;font-size:14px;color:var(--mute);line-height:1.6}
+@media(max-width:900px){.flow-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.flow-grid{grid-template-columns:1fr}}
+
+/* ========== ĆWICZENIA — KLUCZOWA SEKCJA ========== */
+.training{background:#fff;position:relative}
+.training .header-row{display:grid;grid-template-columns:1.2fr 1fr;gap:60px;align-items:end;margin-bottom:56px}
+.training-photo-hero{border-radius:24px;overflow:hidden;aspect-ratio:4/3;box-shadow:0 24px 50px rgba(26,26,46,.15)}
+.training-photo-hero img{width:100%;height:100%;object-fit:cover}
+.training-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.tcard{padding:28px;background:var(--cream);border-radius:20px;border:1px solid var(--line);transition:all .3s;display:flex;flex-direction:column}
+.tcard:hover{background:#fff;border-color:var(--rose);transform:translateY(-4px);box-shadow:0 16px 32px rgba(232,121,197,.12)}
+.tcard .ico{width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,var(--rose-soft),var(--teal-soft));display:flex;align-items:center;justify-content:center;font-size:24px;margin-bottom:18px}
+.tcard h3{font-size:20px;font-weight:700;line-height:1.2;margin-bottom:10px}
+.tcard p{font-size:14px;color:#475569;line-height:1.65;flex:1}
+.tcard .examples{margin-top:16px;padding-top:16px;border-top:1px dashed var(--line);font-size:12px;color:var(--mute);line-height:1.55}
+.tcard .examples b{color:var(--rose-deep);font-weight:600}
+
+.training-split{margin-top:72px;display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:center;padding:40px;background:linear-gradient(135deg,var(--rose-soft),var(--teal-soft));border-radius:24px}
+.training-split-photo{border-radius:16px;overflow:hidden;aspect-ratio:4/5;box-shadow:0 20px 40px rgba(0,0,0,.1)}
+.training-split-photo img{width:100%;height:100%;object-fit:cover}
+.training-split h3{font-size:28px;font-weight:500;font-style:italic;margin-bottom:14px}
+.training-split h3 b{font-weight:900;font-style:normal;color:var(--rose-deep)}
+.training-split p{font-size:15px;color:#475569;line-height:1.7;margin-bottom:12px}
+.training-split ul{margin-top:18px;list-style:none;display:flex;flex-direction:column;gap:10px}
+.training-split li{padding-left:28px;position:relative;font-size:14px;color:#334155}
+.training-split li::before{content:"✓";position:absolute;left:0;top:-2px;width:20px;height:20px;background:#fff;border-radius:50%;color:var(--teal);font-weight:900;display:flex;align-items:center;justify-content:center;font-size:11px}
+
+@media(max-width:900px){
+  .training .header-row{grid-template-columns:1fr;gap:32px}
+  .training-cards{grid-template-columns:1fr}
+  .training-split{grid-template-columns:1fr;padding:24px}
+}
+
+/* ========== DLA KOGO ========== */
+.forwhom{background:var(--ink);color:var(--cream);position:relative;overflow:hidden}
+.forwhom::before{content:"";position:absolute;top:-200px;right:-200px;width:500px;height:500px;background:radial-gradient(circle,rgba(232,121,197,.3),transparent 70%);z-index:0}
+.forwhom .wrap{position:relative;z-index:2}
+.forwhom h2.section-title{color:var(--cream)}
+.forwhom h2.section-title .rose{color:var(--rose);text-shadow:0 0 30px rgba(232,121,197,.5)}
+.forwhom .section-intro{color:rgba(254,249,245,.75)}
+.forwhom .section-kicker{background:rgba(232,121,197,.15);color:var(--rose)}
+
+.conditions{margin-top:52px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.condition{padding:24px;background:rgba(255,255,255,.04);border:1px solid rgba(232,121,197,.2);border-radius:18px;transition:all .3s}
+.condition:hover{background:rgba(232,121,197,.08);border-color:var(--rose)}
+.condition .ico{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--rose),var(--rose-deep));display:flex;align-items:center;justify-content:center;font-size:20px;margin-bottom:14px}
+.condition h4{font-size:17px;font-weight:700;color:var(--cream);margin-bottom:6px;font-family:'Fraunces',serif}
+.condition p{font-size:13px;color:rgba(254,249,245,.65);line-height:1.6}
+@media(max-width:900px){.conditions{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.conditions{grid-template-columns:1fr}}
+
+/* ========== METODY ========== */
+.methods{background:#fff}
+.methods-grid{margin-top:56px;display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.method{padding:32px;background:var(--cream);border-radius:20px;border:1px solid var(--line);display:flex;gap:20px}
+.method .badge{flex-shrink:0;width:64px;height:64px;border-radius:16px;background:linear-gradient(135deg,var(--rose),var(--teal));color:#fff;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:900;font-size:20px;letter-spacing:-.02em;box-shadow:0 8px 20px rgba(232,121,197,.25)}
+.method h3{font-size:19px;font-weight:700;line-height:1.2;margin-bottom:8px}
+.method p{font-size:14px;color:#475569;line-height:1.65}
+@media(max-width:900px){.methods-grid{grid-template-columns:1fr}}
+
+/* ========== KWALIFIKACJE ========== */
+.quals{background:var(--cream)}
+.quals .wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:center}
+.quals-photo{aspect-ratio:3/4;border-radius:20px;overflow:hidden;box-shadow:0 24px 50px rgba(26,26,46,.15)}
+.quals-photo img{width:100%;height:100%;object-fit:cover}
+.quals-list{list-style:none;margin-top:32px;display:flex;flex-direction:column;gap:14px}
+.quals-list li{padding:18px 22px;background:#fff;border-radius:14px;border-left:4px solid var(--rose);display:flex;align-items:center;gap:14px;font-size:14px;color:#334155;line-height:1.5}
+.quals-list li .ico{flex-shrink:0;width:28px;height:28px;border-radius:50%;background:var(--rose-soft);display:flex;align-items:center;justify-content:center;font-size:14px}
+.quals-list li b{color:var(--ink);font-weight:700}
+@media(max-width:900px){.quals .wrap{grid-template-columns:1fr}}
+
+/* ========== FAQ ========== */
+.faq{background:#fff}
+.faq-list{margin-top:48px;max-width:820px}
+.faq-item{border-bottom:1px solid var(--line);padding:24px 0}
+.faq-item summary{font-family:'Fraunces',serif;font-weight:700;font-size:19px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;line-height:1.3;list-style:none}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";font-family:'Inter',sans-serif;font-weight:400;color:var(--rose-deep);font-size:24px;transition:transform .3s;flex-shrink:0}
+.faq-item[open] summary::after{transform:rotate(45deg)}
+.faq-item .answer{margin-top:12px;font-size:15px;color:#475569;line-height:1.75}
+
+/* ========== CTA / CONTACT ========== */
+.contact{background:linear-gradient(135deg,var(--rose-soft) 0%,var(--teal-soft) 100%);padding:120px 0}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.contact-left .kicker{color:var(--rose-deep)}
+.contact-left h2{font-size:clamp(32px,4.5vw,56px);line-height:1.05;font-weight:500;font-style:italic;margin-bottom:20px}
+.contact-left h2 b{font-weight:900;font-style:normal}
+.contact-left h2 .rose{color:var(--rose-deep);font-style:normal;font-weight:900}
+.contact-left p{font-size:17px;color:#334155;line-height:1.65;max-width:480px}
+
+.contact-card{background:#fff;padding:40px;border-radius:24px;box-shadow:0 30px 60px rgba(26,26,46,.1)}
+.contact-card h3{font-family:'Fraunces',serif;font-size:22px;font-weight:700;margin-bottom:20px}
+.contact-list{list-style:none;display:flex;flex-direction:column;gap:18px;margin-bottom:28px}
+.contact-list li{display:flex;align-items:flex-start;gap:14px;font-size:15px;color:#334155}
+.contact-list li .ico{width:42px;height:42px;border-radius:12px;background:var(--rose-soft);color:var(--rose-deep);display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0}
+.contact-list li b{display:block;font-size:12px;color:var(--mute);text-transform:uppercase;letter-spacing:.1em;font-weight:600;margin-bottom:4px}
+.contact-list li a{color:var(--ink);text-decoration:none;font-weight:600}
+.contact-list li a:hover{color:var(--rose-deep)}
+.contact-cta{display:block;padding:16px 24px;background:var(--ink);color:#fff;text-decoration:none;border-radius:100px;font-weight:600;text-align:center;font-size:15px;transition:all .2s}
+.contact-cta:hover{background:var(--rose-deep);transform:translateY(-2px)}
+
+@media(max-width:900px){.contact .wrap{grid-template-columns:1fr}}
+
+/* ========== FOOTER ========== */
+footer{background:var(--ink);color:var(--cream);padding:56px 0 28px}
+footer .wrap{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:48px;margin-bottom:40px}
+footer .brand{color:var(--cream)}
+footer .brand-text .name{color:var(--cream)}
+footer .brand-text .tag{color:rgba(254,249,245,.5)}
+footer .col h4{font-family:'Fraunces',serif;font-size:14px;font-weight:700;color:var(--cream);text-transform:uppercase;letter-spacing:.1em;margin-bottom:16px;opacity:.8}
+footer .col ul{list-style:none;display:flex;flex-direction:column;gap:10px;font-size:14px;color:rgba(254,249,245,.65)}
+footer .col a{color:inherit;text-decoration:none}
+footer .col a:hover{color:var(--rose)}
+footer .tagline{margin-top:16px;font-size:14px;color:rgba(254,249,245,.65);max-width:320px;line-height:1.6}
+footer .bottom{border-top:1px solid rgba(254,249,245,.1);padding-top:24px;display:flex;justify-content:space-between;align-items:center;font-size:12px;color:rgba(254,249,245,.5);letter-spacing:.05em}
+@media(max-width:900px){footer .wrap{grid-template-columns:1fr}}
+
+/* Accent line decoration */
+.hr-flourish{display:flex;align-items:center;gap:14px;margin:0 auto;width:fit-content;opacity:.5}
+.hr-flourish::before,.hr-flourish::after{content:"";width:60px;height:1px;background:var(--rose)}
+
+::selection{background:var(--rose);color:#fff}
+</style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="header">
+  <div class="wrap inner">
+    <a class="brand" href="#">
+      <img src="assets/logo.jpg" alt="Małgorzata Łapot Fizjoterapia Dziecięca">
+      <div class="brand-text">
+        <div class="name">Małgorzata Łapot</div>
+        <div class="tag">Fizjoterapia dziecięca</div>
+      </div>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#about">O mnie</a></li>
+        <li><a href="#flow">Jak pracuję</a></li>
+        <li><a href="#training">Ćwiczenia</a></li>
+        <li><a href="#forwhom">Dla kogo</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+    <a class="cta" href="#contact">Umów wizytę →</a>
+  </div>
+</header>
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap">
+    <div class="hero-left">
+      <div class="hero-badge">Gabinet FizjoFinezja · Grodzisk Mazowiecki</div>
+      <h1><i>Ruch to</i><br><b>pierwszy język</b><br><span class="rose">Twojego dziecka.</span></h1>
+      <p class="sub">Pomagam mu mówić płynniej. Terapia 1:1 dopasowana do dziecka — nie odwrotnie.
+        Wady postawy, skoliozy, zaburzenia neurorozwojowe, wcześniaki. Od 2. roku życia.</p>
+      <div class="cta-row">
+        <a class="btn-primary" href="#contact">Zarezerwuj pierwszą wizytę →</a>
+        <a class="btn-ghost" href="#training">Zobacz jak pracuję ↓</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-decor"></div>
+      <div class="hero-decor-2"></div>
+      <div class="hero-photo">
+        <img src="assets/ai-cwiczenie-plank.jpg" alt="Małgorzata prowadzi ćwiczenie stabilizujące z dziewczynką na macie">
+      </div>
+      <div class="hero-stats-card">
+        <div class="ico">🎓</div>
+        <div>
+          <div class="t">Mgr fizjoterapii WUM</div>
+          <div class="s">PWZf: 75097 · 2× stypendium rektora</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust">
+  <div class="wrap">
+    <div class="item"><div class="v">4+</div><div class="l">lata praktyki z dziećmi</div></div>
+    <div class="item"><div class="v">2 r.ż.</div><div class="l">już od tego wieku</div></div>
+    <div class="item"><div class="v">10+</div><div class="l">ukończonych kursów</div></div>
+    <div class="item"><div class="v">1:1</div><div class="l">zawsze indywidualnie</div></div>
+    <div class="item"><div class="v">NFZ+</div><div class="l">doświadczenie państwowe i prywatne</div></div>
+  </div>
+</div>
+
+<!-- ========== ABOUT ========== -->
+<section id="about" class="about">
+  <div class="wrap">
+    <div class="about-photos">
+      <div class="p-main"><img src="assets/real-gabinet-mata.jpg" alt="Małgorzata Łapot w gabinecie fizjoterapeutycznym"></div>
+      <div class="p-accent"><img src="assets/real-portret-niebieski.jpg" alt="Małgorzata w uniformie fizjoterapeuty"></div>
+    </div>
+    <div class="about-body">
+      <span class="section-kicker rose">O mnie</span>
+      <h2 class="section-title">Jestem fizjoterapeutą,<br>która <b>słucha</b> <span class="rose">Twojego dziecka.</span></h2>
+      <p>Nazywam się <span class="highlight">Małgorzata Łapot</span>. Jestem absolwentką Warszawskiego
+      Uniwersytetu Medycznego (Wydział Medyczny, kierunek Fizjoterapia). Tytuł magistra zdobyłam w 2022 roku —
+      dwukrotnie z wyróżnieniem i stypendium rektora.</p>
+      <p>Zainteresowanie fizjoterapią pojawiło się już w liceum, gdy angażowałam się w wolontariat wśród
+      osób z niepełnosprawnościami. Praktyki studenckie w Dziecięcym Szpitalu Klinicznym WUM utwierdziły mnie:
+      <span class="highlight">moim powołaniem jest praca z dziećmi</span>.</p>
+      <p>Od 2024 roku prowadzę własny gabinet. Równolegle dzielę się wiedzą jako asystent w Katedrze Sportów
+      Indywidualnych AWF Warszawa. W terapii łączę elementy <b>DNS, Vojty i Integracji Sensorycznej</b> —
+      zawsze z dogłębną diagnostyką i ścisłą współpracą z rodzicami.</p>
+
+      <div class="about-card-row">
+        <div class="about-card">
+          <div class="ico">🏥</div>
+          <div class="t">Doświadczenie 1:1</div>
+          <div class="s">Przedszkole integracyjne, poradnia NFZ, gabinety prywatne. Dzieci od 2 r.ż.</div>
+        </div>
+        <div class="about-card">
+          <div class="ico">👶</div>
+          <div class="t">Niemowlęta + starsze dzieci</div>
+          <div class="s">Wczesna interwencja do terapii uczniów ze skoliozami.</div>
+        </div>
+        <div class="about-card">
+          <div class="ico">🎓</div>
+          <div class="t">Nauka + praktyka</div>
+          <div class="s">AWF + konferencje Pro Scoliosis, Fizja, Fundacja Wstawaj Alicja.</div>
+        </div>
+        <div class="about-card">
+          <div class="ico">🤝</div>
+          <div class="t">Rodzic = partner</div>
+          <div class="s">Instrukcje domowe, materiały, kontakt między sesjami.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== JAK PRACUJĘ ========== -->
+<section id="flow" class="flow">
+  <div class="wrap">
+    <span class="section-kicker">Jak wygląda współpraca</span>
+    <h2 class="section-title">Od <b>pierwszej wizyty</b><br>do <span class="rose">zmiany, którą widać.</span></h2>
+    <p class="section-intro">Nie sprzedaję "pakietów". Każde dziecko ma inne ciało, inną historię, inny tydzień.
+      Pracujemy po kolei — diagnostyka, plan, ruch, korekta.</p>
+
+    <div class="flow-grid">
+      <div class="flow-step">
+        <div class="num">1</div>
+        <h3>Wywiad &amp; diagnostyka</h3>
+        <p>Rozmowa z rodzicami, ocena wzorców ruchowych dziecka, testy funkcjonalne. Szukam <b>przyczyny</b>, nie objawu.</p>
+      </div>
+      <div class="flow-step">
+        <div class="num">2</div>
+        <h3>Plan szyty na miarę</h3>
+        <p>Dobieram metody (DNS, Vojta, SI, Zukunft-Huber) i konkretne ćwiczenia pod wiek, poziom i cel dziecka.</p>
+      </div>
+      <div class="flow-step">
+        <div class="num">3</div>
+        <h3>Sesja 1:1 — ruch + zabawa</h3>
+        <p>Dziecko trenuje przez grę. Pokonywanie toru, ćwiczenia z piłką, gra "w statuy", wymyślanie ruchów razem.</p>
+      </div>
+      <div class="flow-step">
+        <div class="num">4</div>
+        <h3>Dom &amp; kontrola</h3>
+        <p>Rodzic dostaje 2–3 ćwiczenia do domu w formie filmu. Co 4–6 tygodni retest + modyfikacja planu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ĆWICZENIA (GŁÓWNA SEKCJA) ========== -->
+<section id="training" class="training">
+  <div class="wrap">
+    <div class="header-row">
+      <div class="training-photo-hero">
+        <img src="assets/ai-diagnostyka-kregoslup.jpg" alt="Konsultacja fizjoterapeutyczna z dzieckiem i rodzicem">
+      </div>
+      <div>
+        <span class="section-kicker rose">Ćwiczenia z Gosią</span>
+        <h2 class="section-title">Jak <b>trenujemy z dziećmi</b> — <i>naprawdę.</i></h2>
+        <p class="section-intro">Ćwiczenia fizjoterapeutyczne dla dziecka nie mogą być karą.
+          W moim gabinecie to <b>tor przeszkód, piłka, poduszka sensoryczna i dużo śmiechu</b>.
+          Efekt: dziecko chce wracać. Rodzice widzą zmianę.</p>
+      </div>
+    </div>
+
+    <div class="training-cards">
+      <div class="tcard">
+        <div class="ico">🧘</div>
+        <h3>Stabilizacja centralna</h3>
+        <p>Silny "gorset mięśniowy" = poprawna postawa całego ciała. Trenujemy mięśnie głębokie brzucha,
+          grzbietu, przepony. Fundament dla każdego ruchu.</p>
+        <div class="examples"><b>W praktyce:</b> deska z uniesioną nogą, "bird-dog" z psa, koci grzbiet,
+          zabawa w "statuę superbohatera" — trzymanie pozycji 20 sekund.</div>
+      </div>
+      <div class="tcard">
+        <div class="ico">⚖️</div>
+        <h3>Równowaga &amp; propriocepcja</h3>
+        <p>Czucie własnego ciała w przestrzeni — kluczowe u dzieci z wadami postawy, zaburzeniami
+          neurorozwojowymi, płaskostopiem.</p>
+        <div class="examples"><b>W praktyce:</b> poduszka sensomotoryczna, stanie na jednej nodze z zamkniętymi
+          oczami, balansowanie na półkuli, chód po linie, przeplatanki rąk i nóg.</div>
+      </div>
+      <div class="tcard">
+        <div class="ico">🎯</div>
+        <h3>Kontrola motoryczna</h3>
+        <p>Świadome, precyzyjne ruchy. Rozpisujemy złożone wzorce (np. prawidłowy chód, wstawanie z ziemi)
+          na składowe i trenujemy krok po kroku.</p>
+        <div class="examples"><b>W praktyce:</b> tor przeszkód z piankami, przenoszenie piłki na głowie,
+          "małpka na drabinkach", przechodzenie przez tunel z zatrzymaniem w środku.</div>
+      </div>
+      <div class="tcard">
+        <div class="ico">🏃</div>
+        <h3>Wzorce chodu &amp; biegu</h3>
+        <p>Dla dzieci po 3. r.ż. z nieprawidłowym chodem, asymetrią, "zaginaniem stopy do wewnątrz".
+          Pracuję z całym łańcuchem: stopa → kolano → biodro → tułów.</p>
+        <div class="examples"><b>W praktyce:</b> chód po ścieżce z odciskami stóp, bieg z wysokim unoszeniem
+          kolan, skip A/B dostosowany do dziecka, ćwiczenia na paluszkach i piętach.</div>
+      </div>
+      <div class="tcard">
+        <div class="ico">🌀</div>
+        <h3>Mobilność &amp; elastyczność</h3>
+        <p>Rozluźnienie napiętych pasm, praca nad zakresem ruchu w biodrach, barkach, kręgosłupie.
+          Delikatnie, poprzez ruch, nigdy brutalnie.</p>
+        <div class="examples"><b>W praktyce:</b> "jaszczurki na ziemi", "mostek do tunelu", rozciąganie z piłką,
+          oddech przeponowy z misiami na brzuchu.</div>
+      </div>
+      <div class="tcard">
+        <div class="ico">🧩</div>
+        <h3>Integracja sensoryczna</h3>
+        <p>Dla dzieci z ADHD, spektrum autyzmu, nadwrażliwością / niedowrażliwością dotyku, ruchu, równowagi.
+          Elementy SI wplatam w całą sesję.</p>
+        <div class="examples"><b>W praktyce:</b> huśtawka, deska pychówka, zabawa z różnymi fakturami,
+          masaż szczotkowaniem, "szukanie skarbu" w pojemniku z ryżem.</div>
+      </div>
+    </div>
+
+    <div class="training-split">
+      <div class="training-split-photo">
+        <img src="assets/ai-cwiczenie-poduszka.jpg" alt="Ćwiczenie na poduszce sensomotorycznej z fizjoterapeutą">
+      </div>
+      <div>
+        <h3>Co dziecko widzi w <b>moim gabinecie?</b></h3>
+        <p>Nie białą salę i gabinet lekarski. Widzi <b>plac zabaw z zadaniami</b> — ale każdy ruch ma cel.
+          Każda "gra" to konkretna pozycja, które trenuje daną grupę mięśni lub wzorzec neurologiczny.</p>
+        <ul>
+          <li>Piłki gimnastyczne różnych rozmiarów, poduszki sensomotoryczne, drabinki</li>
+          <li>Maty zmiennofakturowe, wałki do propriocepcji, deski równoważne</li>
+          <li>Zestaw do integracji sensorycznej: huśtawki, deska pychówka, tunele</li>
+          <li>Gadżety motywacyjne — karty, tablice osiągnięć, nagrody za postępy</li>
+          <li>Spokojny, dobrze oświetlony gabinet — minimum bodźców, maksimum ruchu</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DLA KOGO ========== -->
+<section id="forwhom" class="forwhom">
+  <div class="wrap">
+    <span class="section-kicker">Specjalizacje</span>
+    <h2 class="section-title">Dla kogo <span class="rose">trenujemy razem.</span></h2>
+    <p class="section-intro">Zakres, w którym czuję się w swoim żywiole. Diagnostyka, terapia, konsultacje —
+      zarówno dla dzieci z jednostką chorobową, jak i profilaktycznie.</p>
+
+    <div class="conditions">
+      <div class="condition">
+        <div class="ico">🧍</div>
+        <h4>Wady postawy</h4>
+        <p>Plecy okrągłe, wklęsłe, asymetria barków/miednicy, koślawość kolan, płaskostopie.</p>
+      </div>
+      <div class="condition">
+        <div class="ico">🧬</div>
+        <h4>Skoliozy idiopatyczne</h4>
+        <p>Diagnostyka i terapia wg metod specyficznej fizjoterapii (m.in. FITS, Schroth-style elements).</p>
+      </div>
+      <div class="condition">
+        <div class="ico">🧠</div>
+        <h4>Zaburzenia neurologiczne</h4>
+        <p>Mózgowe Porażenie Dziecięce (MPD), niedowłady, zaburzenia napięcia mięśniowego.</p>
+      </div>
+      <div class="condition">
+        <div class="ico">💡</div>
+        <h4>Neurorozwojowe</h4>
+        <p>ADHD, spektrum autyzmu — praca z ciałem wspiera regulację i koncentrację.</p>
+      </div>
+      <div class="condition">
+        <div class="ico">🧩</div>
+        <h4>Wady genetyczne</h4>
+        <p>Zespół Downa i inne — dostosowane ćwiczenia wspierające rozwój motoryczny.</p>
+      </div>
+      <div class="condition">
+        <div class="ico">👣</div>
+        <h4>Stopy u dzieci</h4>
+        <p>Koślawość, płaskostopie, stopa szpotawa. Terapia manualna Zukunft-Huber + wkładki Igli.</p>
+      </div>
+      <div class="condition">
+        <div class="ico">👶</div>
+        <h4>Niemowlęta</h4>
+        <p>Asymetrie, opóźnienia motoryczne, wizyta patronażowa, wczesna interwencja.</p>
+      </div>
+      <div class="condition">
+        <div class="ico">🤸</div>
+        <h4>Integracja sensoryczna</h4>
+        <p>Terapia SI — nadwrażliwość dotykowa, trudności z równowagą, poszukiwanie bodźców.</p>
+      </div>
+      <div class="condition">
+        <div class="ico">🏃‍♀️</div>
+        <h4>Profilaktyka</h4>
+        <p>Konsultacje dla dzieci zdrowych — ocena rozwoju, wzorców chodu, jakości ruchu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== METODY ========== -->
+<section class="methods">
+  <div class="wrap">
+    <span class="section-kicker rose">Metody pracy</span>
+    <h2 class="section-title">Narzędzia, z których <b>korzystam.</b></h2>
+    <p class="section-intro">Nigdy jedna metoda na wszystko. Zawsze dopasowanie do dziecka, celu i reakcji organizmu.</p>
+
+    <div class="methods-grid">
+      <div class="method">
+        <div class="badge">DNS</div>
+        <div>
+          <h3>Dynamiczna Stabilizacja Nerwowo-Mięśniowa (wg Kolara)</h3>
+          <p>Praca w oparciu o rozwój motoryczny niemowlęcia — przywracanie fizjologicznych wzorców ruchu.
+            Szczególnie skuteczna przy wadach postawy, po urazach, u dzieci z zaburzonym napięciem.</p>
+        </div>
+      </div>
+      <div class="method">
+        <div class="badge">SI</div>
+        <div>
+          <h3>Integracja Sensoryczna (PSTIS, I-go stopnia)</h3>
+          <p>Terapia poprzez stymulację układu przedsionkowego, proprioceptywnego i dotykowego.
+            Efekt: lepsza regulacja emocji, koncentracja, koordynacja.</p>
+        </div>
+      </div>
+      <div class="method">
+        <div class="badge">ZH</div>
+        <div>
+          <h3>Metoda Zukunft-Huber (stopy)</h3>
+          <p>Trójpłaszczyznowa terapia manualna stóp u dzieci. Neurofizjologiczna podstawa — delikatna,
+            precyzyjna praca na tkankach i stawach. Alternatywa/uzupełnienie gipsu czy ortez.</p>
+        </div>
+      </div>
+      <div class="method">
+        <div class="badge">Igli</div>
+        <div>
+          <h3>Indywidualne wkładki ortopedyczne Igli</h3>
+          <p>Dobór wkładek carbon-technik (Medi Polska) — wsparcie w terapii stóp, chodu, postawy.
+            Dziecko dostaje wkładki idealnie dopasowane do jego ruchu.</p>
+        </div>
+      </div>
+      <div class="method">
+        <div class="badge">Sk</div>
+        <div>
+          <h3>Terapia skolioz</h3>
+          <p>Kurs "Diagnostyka i terapia skolioz idiopatycznych — przegląd metod" + aktywny udział w
+            konferencjach Pro Scoliosis. Praca oparta na aktualnej wiedzy.</p>
+        </div>
+      </div>
+      <div class="method">
+        <div class="badge">NR</div>
+        <div>
+          <h3>Terapia neurorozwojowa</h3>
+          <p>Elementy Vojty, praca z dziećmi z MPD, spastycznością, opóźnieniami motorycznymi.
+            Ukończone kursy Fizja: niemowlęta / leczenie spastyczności.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== KWALIFIKACJE ========== -->
+<section class="quals">
+  <div class="wrap">
+    <div>
+      <div class="quals-photo"><img src="assets/real-certyfikat-medi.jpg" alt="Certyfikat Igli Medi Polska — indywidualne wkładki ortopedyczne"></div>
+    </div>
+    <div>
+      <span class="section-kicker">Wykształcenie &amp; kursy</span>
+      <h2 class="section-title">Uczę się <b>cały czas</b> — bo <span class="rose">Twoje dziecko</span> na to zasługuje.</h2>
+      <p class="section-intro">10+ ukończonych kursów specjalistycznych, 2 konferencje ogólnopolskie,
+        publikacje w trakcie. Fizjoterapia to zawód, w którym stagnacja = cofanie się.</p>
+
+      <ul class="quals-list">
+        <li><span class="ico">🎓</span><div><b>Magister Fizjoterapii</b> — WUM Warszawa, 2022 (PWZf: 75097)</div></li>
+        <li><span class="ico">🏆</span><div><b>2× Stypendium Rektora WUM</b> dla najlepszych studentów</div></li>
+        <li><span class="ico">📚</span><div><b>DNS wg Kolara</b> — moduł A, Dynamiczna Stabilizacja Nerwowo-Mięśniowa</div></li>
+        <li><span class="ico">🦶</span><div><b>Zukunft-Huber</b> — trójpłaszczyznowa terapia manualna stóp u dzieci</div></li>
+        <li><span class="ico">🧩</span><div><b>Integracja Sensoryczna</b> — kurs I-go stopnia, PSTIS</div></li>
+        <li><span class="ico">👶</span><div><b>Fizja: Niemowlęta</b> — wizyta patronażowa (kurs stacjonarny)</div></li>
+        <li><span class="ico">🧠</span><div><b>Fizja: Leczenie spastyczności u dzieci z MPD</b></div></li>
+        <li><span class="ico">🧍‍♀️</span><div><b>Diagnostyka i terapia wad postawy</b> u dzieci i młodzieży</div></li>
+        <li><span class="ico">🧬</span><div><b>Diagnostyka i terapia skolioz idiopatycznych</b> — przegląd metod</div></li>
+        <li><span class="ico">👟</span><div><b>Igli — Medi Polska</b> — indywidualny dobór wkładek ortopedycznych</div></li>
+        <li><span class="ico">🎤</span><div><b>I Ogólnopolska Konferencja Skolioza — Nauka i Praktyka</b> (Pro Scoliosis)</div></li>
+        <li><span class="ico">🎤</span><div><b>Ogólnopolska Konferencja "Fizjoterapia pacjenta neurologicznego w XXI w."</b></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section id="faq" class="faq">
+  <div class="wrap">
+    <span class="section-kicker rose">Pytania rodziców</span>
+    <h2 class="section-title">Najczęściej pytacie <b>o to.</b></h2>
+
+    <div class="faq-list">
+      <details class="faq-item" open>
+        <summary>Od którego wieku dziecka prowadzisz terapię?</summary>
+        <div class="answer">Regularnie pracuję z dziećmi od <b>2. roku życia</b> w gabinecie.
+          Przyjmuję też niemowlęta (wizyta patronażowa, konsultacja asymetrii, opóźnień) — zdobywam w tym obszarze
+          kolejne doświadczenia. Górna granica to 18 r.ż.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Ile trwa jedna sesja i jak wygląda?</summary>
+        <div class="answer">Pierwsza wizyta (diagnostyczna): <b>60 minut</b> — wywiad z rodzicem, ocena dziecka,
+          plan terapii. Kolejne sesje: <b>45 minut</b> — część ruchowa/zabawa dopasowana do dziecka,
+          elementy metod (DNS/SI/Zukunft-Huber zależnie od potrzeb), instruktaż dla rodzica.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Czy rodzic zostaje na sesji?</summary>
+        <div class="answer">Z moich obserwacji dzieci <b>lepiej pracują gdy rodzic jest obecny</b>, zwłaszcza
+          najmłodsze. Na niektórych sesjach rodzic jest aktywnym uczestnikiem (pokazujemy, co robić w domu).
+          U starszych dzieci (10+) czasem warto dać dziecku przestrzeń samodzielności — zawsze ustalam to z rodzicem.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Co przynieść na pierwszą wizytę?</summary>
+        <div class="answer">
+          <ul style="list-style:disc;padding-left:20px;margin-top:8px">
+            <li>Wygodny strój sportowy (coś co nie krępuje ruchów, niekoniecznie klasyczny dres)</li>
+            <li>Skarpetki antypoślizgowe lub obuwie sportowe (zależnie od wieku)</li>
+            <li>Książeczkę zdrowia dziecka</li>
+            <li>Wypis od specjalisty (ortopeda / neurolog / pediatra), jeśli jest</li>
+            <li>Ewentualne badania obrazowe (RTG, USG bioder)</li>
+          </ul>
+        </div>
+      </details>
+      <details class="faq-item">
+        <summary>Jak często powinniśmy przychodzić?</summary>
+        <div class="answer">Zależy od problemu. Typowo: <b>1–2× tydzień przez pierwsze 8–12 tygodni</b>,
+          potem co 2 tygodnie lub raz w miesiącu na kontrolę. Kluczowe: ćwiczenia w domu między sesjami —
+          dostajecie ode mnie konkretny plan (2–3 ćwiczenia, film instruktażowy).</div>
+      </details>
+      <details class="faq-item">
+        <summary>Czy dziecko z ADHD / spektrum autyzmu da radę?</summary>
+        <div class="answer">Tak — mam doświadczenie z dziećmi neuroatypowymi, również ze szkoły specjalnej i
+          przedszkola z oddziałami integracyjnymi. Terapia jest <b>elastyczna, krótkie zadania, dużo motywacji</b>.
+          Często łączę fizjoterapię z elementami SI, co dodatkowo wspiera regulację dziecka.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Czy przyjmujesz refundację NFZ?</summary>
+        <div class="answer">W gabinecie prywatnym pracuję komercyjnie. Mam jednak <b>2 lata doświadczenia
+          w poradni NFZ "Aga"</b> i w publicznym przedszkolu — znam procedury. Jeśli szukasz fizjoterapii
+          refundowanej, chętnie doradzę, gdzie się udać.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Czy robisz wizyty domowe?</summary>
+        <div class="answer">W szczególnych przypadkach (niemowlęta, dzieci z głęboką niepełnosprawnością,
+          rodziny z Grodziska Mazowieckiego i okolic) — tak, po wcześniejszym ustaleniu. Proszę o kontakt
+          telefoniczny lub mailowy, omówimy możliwości.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTACT ========== -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="contact-left">
+      <span class="section-kicker rose">Kontakt</span>
+      <h2>Zróbmy <b>pierwszy krok</b><br>razem — <span class="rose">z Twoim dzieckiem.</span></h2>
+      <p>Najlepiej napisz lub zadzwoń — odpowiadam na wiadomości w ciągu 24h w dni robocze.
+        Podczas pierwszej rozmowy zadam kilka pytań o dziecko, umówimy dogodny termin i omówimy cel wizyty.</p>
+    </div>
+    <div class="contact-card">
+      <h3>Małgorzata Łapot Fizjoterapia</h3>
+      <ul class="contact-list">
+        <li>
+          <span class="ico">📞</span>
+          <div>
+            <b>Telefon</b>
+            <a href="tel:+48503360596">+48 503 360 596</a>
+          </div>
+        </li>
+        <li>
+          <span class="ico">✉️</span>
+          <div>
+            <b>Email</b>
+            <a href="mailto:lapot.malgorzata@gmail.com">lapot.malgorzata@gmail.com</a>
+          </div>
+        </li>
+        <li>
+          <span class="ico">📍</span>
+          <div>
+            <b>Gabinet</b>
+            <span style="font-weight:500">FizjoFinezja<br>Grodzisk Mazowiecki</span>
+          </div>
+        </li>
+        <li>
+          <span class="ico">🕐</span>
+          <div>
+            <b>Godziny przyjęć</b>
+            <span style="font-weight:500">Pon–Pt: 10:00–19:00<br>Sobota: po umówieniu</span>
+          </div>
+        </li>
+      </ul>
+      <a class="contact-cta" href="tel:+48503360596">Zadzwoń teraz →</a>
+      <p style="font-size:11px;color:var(--mute);margin-top:14px;text-align:center">
+        NIP: 1182278427 · Prawo wykonywania zawodu fizjoterapeuty: <b>75097</b>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="#">
+        <img src="assets/logo.jpg" alt="Logo MŁ Fizjoterapia Dziecięca" style="width:48px;height:48px">
+        <div class="brand-text">
+          <div class="name">Małgorzata Łapot</div>
+          <div class="tag">Fizjoterapia dziecięca</div>
+        </div>
+      </a>
+      <p class="tagline">"Ruch to pierwszy język Twojego dziecka. Pomagam mu mówić płynniej."</p>
+    </div>
+    <div class="col">
+      <h4>Nawigacja</h4>
+      <ul>
+        <li><a href="#about">O mnie</a></li>
+        <li><a href="#flow">Jak pracuję</a></li>
+        <li><a href="#training">Ćwiczenia</a></li>
+        <li><a href="#forwhom">Dla kogo</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div class="col">
+      <h4>Kontakt</h4>
+      <ul>
+        <li><a href="tel:+48503360596">503 360 596</a></li>
+        <li><a href="mailto:lapot.malgorzata@gmail.com">lapot.malgorzata@gmail.com</a></li>
+        <li>FizjoFinezja · Grodzisk Mazowiecki</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap bottom">
+    <span>© 2026 Małgorzata Łapot Fizjoterapia · NIP 1182278427 · PWZf 75097</span>
+    <span>Designed with care ♡</span>
+  </div>
+</footer>
+
+</body>
+</html>
